@@ -22,7 +22,7 @@ For video quality, a compressed model can't even get close to the original repos
 
 ## Prerequisites
 - Ensure you have [Node.js](https://nodejs.org/) installed on your machine (version 14 or higher recommended).
-- Install [MySQL](https://www.mysql.com/) or any compatible database server.
+- Install [MySQL](https://www.mysql.com/) or any compatible database server. (Can be skip this part as future version implment database for it.)
 
 ## Installation Steps
 
