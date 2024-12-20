@@ -1,6 +1,12 @@
 # HunyuanVideo-WebUI
 A Web UI simplify the AI videos generation using Hunyuan Video Diffusion Model
 
+- This Web UI are based on Node.js, very lightweight and fast to setup and running.
+- The first version-20241220 are only integrating Replicate API for Text2Video. I will at Fal.AI later in the holiday.
+  
+# Planning upcoming update
+- We are going to add more features, make it more convenient streamline for creating video content. Also improve the WebUI if need.
+
 # Node.js Project Setup Instructions
 
 ## Prerequisites
