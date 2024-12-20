@@ -4,6 +4,17 @@ A Web UI simplify the AI videos generation using Hunyuan Video Diffusion Model
 - This Web UI are based on Node.js, very lightweight and fast to setup and running.
 - The first version-20241220 are only integrating Replicate API for Text2Video. I will at Fal.AI later in the holiday.
   
+# Why I Create HunyuanVideo-WebUI?
+
+As I mentioned in the previous post in here https://www.patreon.com/posts/117392000 , and the Youtube Video about Day 1 using HunyuanVideo (https://youtu.be/REQJYz-F1ec) . 
+This AI model needs a high GPU to render good-quality and long video lengths.
+
+So the purpose of this web UI is to streamline work and get some good-quality video clips without spending multiple times generating video results and still getting nothing good.
+
+Of course, you can always use the ComfyUI compressed HunyuanVideo FP8 model file if you want to test this AI model or have fun only.
+
+For video quality, a compressed model can't even get close to the original repository model weights.
+
 # Planning upcoming update
 - We are going to add more features, make it more convenient streamline for creating video content. Also improve the WebUI if need.
 
