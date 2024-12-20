@@ -34,8 +34,10 @@ A Web UI simplify the AI videos generation using Hunyuan Video Diffusion Model
    ```
 
 By Default Login without database use the demo account:
-login : demo
-password demo123
+    ```plaintext
+   login : demo
+   password demo123
+   ```
 
 4. **Run the Application**
    Start the server using the following command:
