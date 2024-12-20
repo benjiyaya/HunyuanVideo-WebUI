@@ -1,0 +1,43 @@
+/* views/styles.css */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.generation-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.video-preview {
+    margin-top: 30px;
+    display: none;
+}
+
+.loading {
+    display: none;
+    margin-top: 20px;
+}
+
+.error-message {
+    display: none;
+    margin-top: 20px;
+}
+
+.video-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.video-history {
+    margin-top: 40px;
+}
+.loading {
+    display: none;
+}

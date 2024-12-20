@@ -1,0 +1,22 @@
+{
+  "name": "my-replicate-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A starterkit webui for running Hunyuan Video with Replicate's API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.6.1",
+    "replicate": "*",
+    "uuid": "^10.0.0"
+  }
+}
