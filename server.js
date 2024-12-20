@@ -24,8 +24,8 @@ const dbConfig = {
 
 // Demo user credentials (hardcoded for now)
 const DEMO_USER = {
-  username: process.env.DEMO_USER,
-  password: process.env.Demo_Pass
+  username: 'demo',
+  password: 'demo123'
 };
 
 // Middleware setup
