@@ -1,3 +1,7 @@
+Update : 
+
+20241228 - Add Fal.AI as API Provider - to use Fal.AI, you have to add the API key in .env file "FAL_KEY=YOUR_API_KEY", in the webui select Fal.AI as the API Provider.
+
 # HunyuanVideo-WebUI
 A Web UI simplify the AI videos generation using Hunyuan Video Diffusion Model
 
@@ -43,6 +47,7 @@ For video quality, a compressed model can't even get close to the original repos
    Skip the Database setting in this version, as it have not implment in the code. That is for multi-users design.
    ```plaintext
    REPLICATE_API_TOKEN=your_api_token_here
+   FAL_KEY=YOUR_API_KEY
    
    DB_HOST=localhost
    DB_USER=dbuser
