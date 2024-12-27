@@ -4,7 +4,8 @@ import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import mysql from 'mysql2/promise';
-import { generateVideo } from './my-replicate-api/videoGeneration.js';
+import { rep_generateVideo } from './my-replicate-api/videoGeneration.js';
+import { falai_generateVideo } from './falai-api/falai-hunyuanvideo.js';
 import { readdir } from 'node:fs/promises';
 import path from 'path';
 
@@ -106,7 +107,8 @@ app.get('/generate', requireLogin, (req, res) => {
 
 app.post('/generate-video', requireLogin, async (req, res) => {
   try {
-    const { prompt, width, height, video_length } = req.body;
+    const { prompt, width, height, video_length, apiProvider } = req.body;
+    let result;
     
     // Create custom parameters object
     const customParams = {
@@ -115,7 +117,14 @@ app.post('/generate-video', requireLogin, async (req, res) => {
       video_length: video_length || 129
     };
 
-    const result = await generateVideo(prompt, customParams);
+    // Choose API provider based on selection
+    if (apiProvider === 'replicate') {
+      result = await rep_generateVideo(prompt, customParams);
+    } else if (apiProvider === 'falai') {
+      result = await falai_generateVideo(prompt);
+    } else {
+      throw new Error('Invalid API provider selected');
+    }
     
     // Save to database
     //await pool.query(

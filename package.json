@@ -1,8 +1,8 @@
 {
-  "name": "my-replicate-app",
-  "version": "1.0.0",
+  "name": "hunyuanvideo-webui-app",
+  "version": "1..5.0",
   "private": true,
-  "description": "A starterkit webui for running Hunyuan Video with Replicate's API",
+  "description": "A starterkit webui for running Hunyuan Video using server API",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.6.1",
     "replicate": "*",
+    "@fal-ai/client" : "*",
     "uuid": "^10.0.0"
   }
 }
