@@ -25,6 +25,14 @@
                     <label for="prompt" class="form-label">Text Prompt</label>
                     <textarea class="form-control" id="prompt" name="prompt" rows="3" required></textarea>
                 </div>
+                <div class="mb-3">
+                    <label for="apiProvider" class="form-label">Choose API Provider</label>
+                    <select class="form-control" id="apiProvider" name="apiProvider" required>
+                        <option value="">Select an Provider</option>
+                        <option value="replicate">Replicate</option>
+                        <option value="falai">FalAI</option>
+                    </select>
+                </div>
                 <button type="submit" class="btn btn-primary">Generate Video</button>
                 <div class="loading mt-3">
                     <div class="spinner-border text-primary" role="status">
@@ -83,7 +91,8 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        prompt: form.prompt.value
+                        prompt: form.prompt.value,
+                        apiProvider: form.apiProvider.value
                     })
                 });
 

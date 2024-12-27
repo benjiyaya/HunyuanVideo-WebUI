@@ -28,6 +28,14 @@
                         placeholder="Describe what you want in the video..."></textarea>
                 </div>
                 <div class="mb-3">
+                    <label for="apiProvider" class="form-label">Choose API Provider</label>
+                    <select class="form-control" id="apiProvider" name="apiProvider" required>
+                        <option value="">Select an Provider</option>
+                        <option value="replicate">Replicate</option>
+                        <option value="falai">FalAI</option>
+                    </select>
+                </div>
+                <div class="mb-3">
                     <label for="width" class="form-label">Width</label>
                     <input type="number" class="form-control" id="width" name="width" value="854" required>
                 </div>
@@ -100,7 +108,8 @@
                         prompt: form.prompt.value,
                         width: form.width.value,
                         height: form.height.value,
-                        video_length: form.video_length.value
+                        video_length: form.video_length.value,
+                        apiProvider: form.apiProvider.value
                     })
                 });
 
