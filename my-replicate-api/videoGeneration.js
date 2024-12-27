@@ -25,7 +25,7 @@ const DEFAULT_PARAMS = {
  * @param {Object} customParams - Optional custom parameters
  * @returns {Promise<{videoUrl: string}>} Generated video information
  */
-export async function generateVideo(prompt, customParams = {}) {
+export async function rep_generateVideo(prompt, customParams = {}) {
   try {
     const input = {
       ...DEFAULT_PARAMS,
@@ -50,7 +50,7 @@ export async function generateVideo(prompt, customParams = {}) {
 
     //create a unique filename for the output
     const filename = uuidv4();
-    const outputFilename = `${filename}_output.mp4`;
+    const outputFilename = `replicate_${filename}_output.mp4`;
     const outputPath = `./outputs/${outputFilename}`;
 
     // Save the file
